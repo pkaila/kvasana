@@ -61,7 +61,7 @@ import {
     examples,
     rules,
     supporters
-} from "/assets/lang/fr.js";
+} from "/assets/lang/fi.js";
 var et = Ke(Fe => {
     const is = function() {
         const s = document.createElement("link").relList;
@@ -104,7 +104,7 @@ var et = Ke(Fe => {
         },
         ze = new Date("01/24/2022"),
         _e = re.day,
-        Ne = "abcdefghijklmnopqrstuvwxyz",
+        Ne = "abcdefghijklmnopqrstuvwxyzåäö",
         ls = keyboardLayout,
         ns = keyboardLayoutReversed,
         Ie = !!navigator.vibrate,
@@ -135,7 +135,7 @@ var et = Ke(Fe => {
         },
         hs = (e, s) => {
             if ("RelativeTimeFormat" in Intl) {
-                const i = new Intl.RelativeTimeFormat("en", {
+                const i = new Intl.RelativeTimeFormat("fi", {
                         numeric: "auto"
                     }),
                     n = s.valueOf() - e.valueOf();
@@ -628,7 +628,7 @@ var et = Ke(Fe => {
                     r = a.firstChild;
                 return d(r, (() => {
                     const u = Q(() => l() === 4, !0);
-                    return () => u() ? lang.appname + lang.complete  : l() === 3 ? lang.soclose : lang.betterluck
+                    return () => u() ? lang.appname + ' ' + lang.complete  : l() === 3 ? lang.soclose : lang.betterluck
                 })()), d(a, (() => {
                     const u = Q(() => e.mode === "free", !0);
                     return () => u() ? g(ia, {

@@ -1,20 +1,20 @@
-# Quadrus (version française de Quordle)
+# Kvasana (Quordlen suomenkielinen version)
 
-![Quadrus](https://quadrus.guigro.com/quadrus-banner-1200.png)
+Testaa taitosi ja ratkaise 4 Wordleä samaan aikaan! Käytössäsi on 9 arvausta kaikkien neljän sanan arvaamiseksi. Uusi Kvasana tulee ratkaistavaksi joka päivä.
 
-Mettez votre talent à rude épreuve en résolvant simultanément 4 Wordle en même temps ! Vous avez 9 essais pour résoudre les 4 mots. Un nouveau groupe de 4 mots sera disponible chaque jour.<br/>
-<br/>
-Jouez sur https://quadrus.guigro.com<br/>
-Version originale en anglais sur www.quordle.com<br/>
-<br/>
-HOW TO TRANSLATE IN YOUR LANGUAGE :<br/>  
-1/ In index.html, change the locale in the HTML tag. <br/>
-2/ Translate the index.html file manually  <br/>
-3/ Duplicate the "en.js" in assets/lang and rename it with your locale name (ie. fr.js for French) <br/> 
-3/ In assets/index.js on line 64, change the path to the locale file according to your language. <br/>
-4/ Fully translate the locale file. Be carefull with the "rules" variable and keep the HTML structure. <br/>  
-  <br/>
-> You can put in wordPick the list of words that can be choosed by the script to be played.<br/>  
-> You can put in wordList the list of words that will be accepted as guesses.  <br/>
-  <br/>
-Upload, you're done !<br/>
+ * Pelaa peliä osoitteessa <a href="https://kvasana.fugu.iki.fi">https://kvasana.fugu.iki.fi</a>
+ * Alkuperäinen englannin kielinen versio löytyy osoitteesta <a href="www.quordle.com">www.quordle.com</a>
+
+How to translate to your language:
+1. In index.html, change the locale in the HTML tag.
+2. Translate the index.html file manually.
+3. Duplicate the "en.js" in assets/lang and rename it to your locale name (ie. fi.js for Finnish).
+4. In assets/index.js on line 64, change the path to the locale file according to your language.
+  * If you need to support additional letters modify the `Ne` variable.
+  * Change the locale for the "RelativeTimeFormat"
+5. Fully translate the locale file. 
+  * Be careful with the "rules" variable and keep the HTML structure.
+  * You can put in wordPick the list of words that can be used by the script to be played.
+  * You can put in wordList the list of words that will be accepted as guesses.
+  * If you need a different keyboard layout modify the `keyboardLayout*` variables.
+6. Upload, you're done!
