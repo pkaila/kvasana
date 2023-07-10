@@ -264,7 +264,7 @@ var et = Ke(Fe => {
         }
         try {
             const o = window.localStorage.getItem("game_size");
-            o === null || o !== "minimal" && o !== "compact" && o !== "full" ? t.gameSize = "compact" : t.gameSize = o
+            o === null || o !== "minimal" && o !== "compact" && o !== "full" ? t.gameSize = "minimal" : t.gameSize = o
         } catch (o) {
             t.gameSize = "compact"
         }["daily", "free"].forEach(o => {
